@@ -1,5 +1,6 @@
-import { HStack } from '@chakra-ui/react';
+import { Flex } from '@chakra-ui/react';
 import { IconLink } from './IconLink';
+import { Divider } from '../Divider';
 
 export function GroupLinks() {
   const links = [
@@ -11,10 +12,13 @@ export function GroupLinks() {
   ];
 
   return (
-    <HStack justify='center' my='16' mx='16' spacing='32'>
-      {links.map((link, index) => (
-        <IconLink key={index} src={link.src} alt={link.alt} />
-      ))}
-    </HStack>
+    <>
+      <Flex justify='space-between' align='center' m='16' px='32'>
+        {links.map((link, index) => (
+          <IconLink key={index} src={link.src} alt={link.alt} />
+        ))}
+      </Flex>
+      <Divider />
+    </>
   );
 }

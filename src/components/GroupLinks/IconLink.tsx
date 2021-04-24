@@ -1,5 +1,5 @@
 import { Stack, Image, Text } from '@chakra-ui/react';
-
+import Link from 'next/link';
 interface IconLinkProps {
   src: string;
   alt: string;
@@ -7,9 +7,16 @@ interface IconLinkProps {
 
 export function IconLink({ src, alt }: IconLinkProps) {
   return (
-    <Stack align='center' justify='center' spacing='4' fontWeight='600'>
-      <Image src={src} alt={alt} />
-      <Text fontSize='24'>{alt}</Text>
-    </Stack>
+    <Link href='/'>
+      <Stack
+        align='center'
+        justify='center'
+        fontWeight='600'
+        _hover={{ filter: 'brightness(0.8)', cursor: 'pointer' }}
+      >
+        <Image src={src} alt={alt} />
+        <Text fontSize='24'>{alt}</Text>
+      </Stack>
+    </Link>
   );
 }
