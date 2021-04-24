@@ -1,8 +1,8 @@
-import { Flex } from '@chakra-ui/react';
+import { Flex, Heading, Text } from '@chakra-ui/react';
 import { IconLink } from './IconLink';
 import { Divider } from '../Divider';
 
-export function GroupLinks() {
+export function Group() {
   const links = [
     { src: './images/cocktail.svg', alt: 'vida notura' },
     { src: './images/surf.svg', alt: 'praia' },
@@ -12,13 +12,24 @@ export function GroupLinks() {
   ];
 
   return (
-    <>
-      <Flex justify='space-between' align='center' m='16' px='32'>
+    <Flex justify='center' direction='column'>
+      <Flex justify='space-between' align='center' m='24' px='32'>
         {links.map((link, index) => (
           <IconLink key={index} src={link.src} alt={link.alt} />
         ))}
       </Flex>
       <Divider />
-    </>
+      <Flex justify='center' align='center' mt='16' mb='16' px='32'>
+        <Heading
+          as='h3'
+          fontWeight='500'
+          textAlign='center'
+          fontSize={[20, 36]}
+        >
+          Vamos nessa?
+          <Text>Então escolha seu continente</Text>
+        </Heading>
+      </Flex>
+    </Flex>
   );
 }

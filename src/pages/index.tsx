@@ -1,6 +1,6 @@
 import { Header } from '../components/Header/index';
 import { Banner } from '../components/BannerDefault/index';
-import { GroupLinks } from '../components/GroupLinks';
+import { Group } from '../components/Group';
 import { Box } from '@chakra-ui/react';
 
 export default function Home() {
@@ -9,7 +9,7 @@ export default function Home() {
       <Header />
       <Box>
         <Banner />
-        <GroupLinks />
+        <Group />
       </Box>
     </>
   );
