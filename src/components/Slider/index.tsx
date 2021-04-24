@@ -47,7 +47,7 @@ export function Slider() {
   ];
 
   return (
-    <Box h='450px' m='auto' mb='16'>
+    <Box m='auto' mb={[4, 16]}>
       <Swiper
         effect='fade'
         spaceBetween={50}
