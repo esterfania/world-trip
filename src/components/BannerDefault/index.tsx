@@ -2,7 +2,6 @@ import {
   Image,
   Box,
   useBreakpointValue,
-  Heading,
   Flex,
   Text,
   Stack,

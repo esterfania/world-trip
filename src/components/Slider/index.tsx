@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Box, Image } from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
+import { SwiperSlideImage } from './SwiperSlideImage';
 
 import SwiperCore, {
   Navigation,
@@ -13,6 +14,38 @@ import SwiperCore, {
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, EffectFade]);
 
 export function Slider() {
+  const images = [
+    {
+      src: './images/dublin.jpg',
+      alt: 'Dublin',
+      description: 'Dublin may be small, but it’s also mighty',
+    },
+    {
+      src: './images/riydh.jpg',
+      alt: 'Riydh',
+      description:
+        'Saudi Arabia’s capital and main financial hub has distinct landmarks and is becoming an exciting city.',
+    },
+    {
+      src: './images/ammie.jpg',
+      alt: 'Vietnam',
+      description:
+        'As a UNESCO World Heritage Centre, it is best known for its 1000s of sharp peaked islands, which are covered in lush rainforest. Halong Bay is easily one of the most recognisable and beautiful parts of the world.',
+    },
+    {
+      src: './images/italy.jpg',
+      alt: 'Italy',
+      description:
+        'Venice is a stunning city of shaded Piazzas, romantic boat trips through the canals and luxurious hotels.',
+    },
+    {
+      src: './images/moscow.jpg',
+      alt: 'Moscow',
+      description:
+        'Moscow is becoming a popular city to visit, with tourists flocking over for the beautiful squares and churches.',
+    },
+  ];
+
   return (
     <Box h='450px' m='auto' mb='16'>
       <Swiper
@@ -23,56 +56,16 @@ export function Slider() {
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
       >
-        <SwiperSlide>
-          <Image
-            src='./images/dublin.jpg'
-            alt='dublin'
-            objectFit='cover'
-            h='450px'
-            w='100%'
-            m='auto'
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image
-            src='./images/riydh.jpg'
-            alt='riydh'
-            objectFit='cover'
-            h='450px'
-            w='100%'
-            m='auto'
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image
-            src='./images/ammie.jpg'
-            alt='ammie'
-            objectFit='cover'
-            h='450px'
-            w='100%'
-            m='auto'
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image
-            src='./images/italy.jpg'
-            alt='italy'
-            objectFit='cover'
-            h='450px'
-            w='100%'
-            m='auto'
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image
-            src='./images/moscow.jpg'
-            alt='moscow'
-            objectFit='cover'
-            h='450px'
-            w='100%'
-            m='auto'
-          />
-        </SwiperSlide>
+        {images.map((image, i) => (
+          <SwiperSlide key={i}>
+            <SwiperSlideImage
+              headTitle={image.alt}
+              description={image.description}
+              src={image.src}
+              alt={image.alt}
+            />
+          </SwiperSlide>
+        ))}
       </Swiper>
     </Box>
   );
