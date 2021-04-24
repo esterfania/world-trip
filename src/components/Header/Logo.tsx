@@ -1,3 +1,5 @@
+import { Image } from '@chakra-ui/react';
+
 export function Logo() {
-  return <img src='./images/logo.svg' alt='logo' />;
+  return <Image src='./images/logo.svg' alt='logo' objectFit='cover' />;
 }
