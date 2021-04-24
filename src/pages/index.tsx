@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <Header />
       <Banner />
-      <Box width={1160} m='auto'>
+      <Box width='100%' maxWidth={1160} m='auto'>
         <Group />
         <Slider />
       </Box>

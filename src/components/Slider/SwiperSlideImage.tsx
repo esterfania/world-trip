@@ -26,10 +26,10 @@ export function SwiperSlideImage({
         bg='gray.800'
         opacity='0.8'
       >
-        <Heading color='gray.100' fontWeight='700' fontSize='48' mb='4'>
+        <Heading color='gray.100' fontWeight='700' fontSize={[24, 48]} mb='4'>
           {headTitle}
         </Heading>
-        <Text fontWeight='700' fontSize='24' w='50%' textAlign='center'>
+        <Text fontWeight='700' fontSize={[14, 24]} w='50%' textAlign='center'>
           {description}
         </Text>
       </Flex>
@@ -37,7 +37,7 @@ export function SwiperSlideImage({
         src={src}
         alt={alt}
         objectFit='cover'
-        h='450px'
+        h={['250px', '450px']}
         w='100%'
         m='auto'
       />

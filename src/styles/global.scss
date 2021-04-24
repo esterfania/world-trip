@@ -3,8 +3,8 @@
 }
 
 .swiper-pagination-bullet {
-  width: 16px;
-  height: 16px;
+  width: 1rem;
+  height: 1rem;
   display: inline-block;
   border-radius: 50%;
   background: #999999;
@@ -14,4 +14,15 @@
 .swiper-pagination-bullet-active {
   opacity: 1;
   background: var(--swiper-theme-color);
+}
+@media (max-width: 1080px) {
+  html {
+    font-size: 95.75%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
 }

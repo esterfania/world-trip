@@ -1,5 +1,5 @@
 import { Flex, Heading, Text } from '@chakra-ui/react';
-import { IconLink } from './IconLink';
+import { IconLinkList } from './IconLinkList';
 import { Divider } from '../Divider';
 
 export function Group() {
@@ -12,14 +12,16 @@ export function Group() {
   ];
 
   return (
-    <Flex justify='center' align='center' direction='column'>
-      <Flex justify='space-between' align='center' my='24' w='100%'>
-        {links.map((link, index) => (
-          <IconLink key={index} src={link.src} alt={link.alt} />
-        ))}
-      </Flex>
+    <Flex justify='center' align='center' direction='column' w='100%'>
+      <IconLinkList links={links} />
       <Divider />
-      <Flex justify='center' align='center' mt='16' mb='16' px='32'>
+      <Flex
+        justify='center'
+        align='center'
+        mt={[8, 16]}
+        mb={[8, 16]}
+        px={[0, 32]}
+      >
         <Heading
           as='h3'
           fontWeight='500'

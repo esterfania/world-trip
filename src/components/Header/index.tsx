@@ -17,12 +17,13 @@ export function Header({ isVisibleBackButton = false }: HeaderProps) {
       boxShadow='xs'
     >
       <Flex
-        maxWidth={1480}
+        w={['100%', 1480]}
         as='header'
         h='20'
         mx='auto'
         px={['6', '8']}
         align='center'
+        wrap='wrap'
       >
         {isVisibleBackButton && (
           <Flex justify='flex-start' w='50px'>

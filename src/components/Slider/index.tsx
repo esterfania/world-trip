@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Box } from '@chakra-ui/react';
+import { Box, useBreakpointValue } from '@chakra-ui/react';
 import { SwiperSlideImage } from './SwiperSlideImage';
 
 import SwiperCore, {
@@ -30,7 +30,7 @@ export function Slider() {
       src: './images/ammie.jpg',
       alt: 'Vietnam',
       description:
-        'As a UNESCO World Heritage Centre, it is best known for its 1000s of sharp peaked islands, which are covered in lush rainforest. Halong Bay is easily one of the most recognisable and beautiful parts of the world.',
+        'As a UNESCO World Heritage Centre, it is best known for its 1000s of sharp peaked islands, which are covered in lush rainforest.',
     },
     {
       src: './images/italy.jpg',
