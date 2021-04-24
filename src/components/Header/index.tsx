@@ -36,7 +36,9 @@ export function Header({ isVisibleBackButton = false }: HeaderProps) {
         )}
         <Flex justify='center' align='center' w='100%'>
           <Link href='/'>
-            <Logo />
+            <a>
+              <Logo />
+            </a>
           </Link>
         </Flex>
       </Flex>
