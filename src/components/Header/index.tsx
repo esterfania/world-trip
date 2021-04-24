@@ -1,35 +1,45 @@
-import { Flex, IconButton, Icon } from '@chakra-ui/react';
+import { Flex, IconButton, Icon, Box } from '@chakra-ui/react';
 import { Logo } from './Logo';
 import { IoIosArrowBack } from 'react-icons/io';
-
+import Link from 'next/link';
 interface HeaderProps {
   isVisibleBackButton?: boolean;
 }
 
 export function Header({ isVisibleBackButton = false }: HeaderProps) {
   return (
-    <Flex
+    <Box
       w='100%'
-      as='header'
-      maxWidth={1480}
-      h='20'
-      mx='auto'
-      px={['6', '8']}
-      align='center'
+      position='sticky'
+      top='0'
+      zIndex='1'
+      bg='gray.100'
+      boxShadow='xs'
     >
-      {isVisibleBackButton && (
-        <Flex justify='flex-start' w='50px'>
-          <IconButton
-            icon={<Icon as={IoIosArrowBack} />}
-            fontSize='24'
-            aria-label='back button'
-            variant='ghost'
-          />
+      <Flex
+        maxWidth={1480}
+        as='header'
+        h='20'
+        mx='auto'
+        px={['6', '8']}
+        align='center'
+      >
+        {isVisibleBackButton && (
+          <Flex justify='flex-start' w='50px'>
+            <IconButton
+              icon={<Icon as={IoIosArrowBack} />}
+              fontSize='24'
+              aria-label='back button'
+              variant='ghost'
+            />
+          </Flex>
+        )}
+        <Flex justify='center' align='center' w='100%'>
+          <Link href='/'>
+            <Logo />
+          </Link>
         </Flex>
-      )}
-      <Flex justify='center' w='100%'>
-        <Logo />
       </Flex>
-    </Flex>
+    </Box>
   );
 }
