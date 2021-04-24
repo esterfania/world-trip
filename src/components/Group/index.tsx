@@ -12,8 +12,8 @@ export function Group() {
   ];
 
   return (
-    <Flex justify='center' direction='column'>
-      <Flex justify='space-between' align='center' m='24' px='32'>
+    <Flex justify='center' align='center' direction='column'>
+      <Flex justify='space-between' align='center' my='24' w='100%'>
         {links.map((link, index) => (
           <IconLink key={index} src={link.src} alt={link.alt} />
         ))}

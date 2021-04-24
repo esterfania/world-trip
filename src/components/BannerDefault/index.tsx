@@ -45,7 +45,7 @@ export function Banner() {
         <Image
           src='./images/airplane.svg'
           position='absolute'
-          top='18%'
+          top='150px'
           right='10%'
         />
       )}

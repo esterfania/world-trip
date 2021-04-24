@@ -1,5 +1,7 @@
 import { Stack, Image, Text } from '@chakra-ui/react';
 import Link from 'next/link';
+import { Tooltip } from '@chakra-ui/react';
+
 interface IconLinkProps {
   src: string;
   alt: string;
