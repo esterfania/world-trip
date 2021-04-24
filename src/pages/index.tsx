@@ -3,7 +3,7 @@ import { Banner } from '../components/BannerDefault/index';
 export default function Home() {
   return (
     <>
-      <Header isVisibleBackButton />
+      <Header />
       <Banner />
     </>
   );

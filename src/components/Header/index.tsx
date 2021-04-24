@@ -3,7 +3,7 @@ import { Logo } from './Logo';
 import { IoIosArrowBack } from 'react-icons/io';
 
 interface HeaderProps {
-  isVisibleBackButton: boolean;
+  isVisibleBackButton?: boolean;
 }
 
 export function Header({ isVisibleBackButton = false }: HeaderProps) {
