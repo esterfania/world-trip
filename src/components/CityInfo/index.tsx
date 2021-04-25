@@ -58,7 +58,7 @@ export function CityInfo() {
             >
               <IconButton
                 icon={<Icon as={FiInfo} />}
-                fontSize='16'
+                size='xs'
                 color='gray.500'
                 aria-label='hover me'
                 variant='unstyled'
