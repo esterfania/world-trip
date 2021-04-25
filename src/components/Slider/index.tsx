@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Box, useBreakpointValue } from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
 import { SwiperSlideImage } from './SwiperSlideImage';
 
 import SwiperCore, {
@@ -9,6 +9,7 @@ import SwiperCore, {
   A11y,
   EffectFade,
 } from 'swiper';
+import React from 'react';
 
 // install Swiper modules
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, EffectFade]);
@@ -55,8 +56,8 @@ export function Slider() {
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
       >
-        {images.map((image, i) => (
-          <SwiperSlide key={i}>
+        {images.map((image) => (
+          <SwiperSlide key={image.alt}>
             <SwiperSlideImage
               headTitle={image.alt}
               description={image.description}

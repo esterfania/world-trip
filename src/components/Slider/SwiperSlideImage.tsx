@@ -1,4 +1,5 @@
-import { Image, Box, Text, Heading, Flex } from '@chakra-ui/react';
+import { Image, Box, Text, Flex, Heading } from '@chakra-ui/react';
+import { SliderLink } from './SliderLink';
 
 interface SwiperSlideProps {
   headTitle: string;
@@ -26,9 +27,11 @@ export function SwiperSlideImage({
         bg='gray.800'
         opacity='0.8'
       >
-        <Heading color='gray.100' fontWeight='700' fontSize={[24, 48]} mb='4'>
-          {headTitle}
-        </Heading>
+        <SliderLink href={'/cities'}>
+          <Heading color='gray.100' fontWeight='700' fontSize={[24, 48]} mb='4'>
+            {headTitle}
+          </Heading>
+        </SliderLink>
         <Text fontWeight='700' fontSize={[14, 24]} w='50%' textAlign='center'>
           {description}
         </Text>
