@@ -15,24 +15,28 @@ export function SwiperSlideImage({
   description,
 }: SwiperSlideProps) {
   return (
-    <Box>
+    <>
       <Flex
         align='center'
         justify='center'
         w='100%'
         h='100%'
         position='absolute'
-        color='gray.100'
         direction='column'
-        bg='gray.800'
-        opacity='0.8'
+        zIndex='1'
       >
         <SliderLink href={'/cities'}>
-          <Heading color='gray.100' fontWeight='700' fontSize={[24, 48]} mb='4'>
+          <Heading color='gray.200' fontWeight='700' fontSize={[24, 48]} mb='4'>
             {headTitle}
           </Heading>
         </SliderLink>
-        <Text fontWeight='700' fontSize={[14, 24]} w='50%' textAlign='center'>
+        <Text
+          fontWeight='700'
+          color='gray.200'
+          fontSize={[14, 24]}
+          w='50%'
+          textAlign='center'
+        >
           {description}
         </Text>
       </Flex>
@@ -40,10 +44,11 @@ export function SwiperSlideImage({
         src={src}
         alt={alt}
         objectFit='cover'
+        filter='brightness(50%)'
         h={['250px', '450px']}
         w='100%'
         m='auto'
       />
-    </Box>
+    </>
   );
 }

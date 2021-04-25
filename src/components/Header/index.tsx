@@ -2,6 +2,7 @@ import { Flex, IconButton, Icon, Box } from '@chakra-ui/react';
 import { Logo } from './Logo';
 import { IoIosArrowBack } from 'react-icons/io';
 import Link from 'next/link';
+import { SliderLink } from '../Slider/SliderLink';
 interface HeaderProps {
   isVisibleBackButton?: boolean;
 }
@@ -24,18 +25,26 @@ export function Header({ isVisibleBackButton = false }: HeaderProps) {
         px={['6', '8']}
         align='center'
         wrap='wrap'
+        m='auto'
       >
         {isVisibleBackButton && (
-          <Flex justify='flex-start' w='50px'>
-            <IconButton
-              icon={<Icon as={IoIosArrowBack} />}
-              fontSize='24'
-              aria-label='back button'
-              variant='ghost'
-            />
-          </Flex>
+          <SliderLink href='/'>
+            <Flex justify='flex-start' w='50px'>
+              <IconButton
+                icon={<Icon as={IoIosArrowBack} />}
+                fontSize='24'
+                aria-label='back button'
+                variant='ghost'
+              />
+            </Flex>
+          </SliderLink>
         )}
-        <Flex justify='center' align='center' w='100%'>
+        <Flex
+          justify='center'
+          align='center'
+          width={'calc(100% - 50px)'}
+          m='auto'
+        >
           <Link href='/'>
             <a>
               <Logo />

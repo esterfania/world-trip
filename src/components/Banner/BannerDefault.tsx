@@ -7,14 +7,14 @@ import {
   Stack,
 } from '@chakra-ui/react';
 
-export function Banner() {
+export function BannerDefault() {
   const isWideVersion = useBreakpointValue({
     base: false,
     lg: true,
   });
 
   return (
-    <Box>
+    <>
       <Flex
         backgroundImage='url(./images/banner.png)'
         backgroundPosition='center'
@@ -25,7 +25,7 @@ export function Banner() {
         justifyContent='center'
         direction='column'
       >
-        <Stack margin={[4, 28]} spacing='4'>
+        <Stack margin={[4, 24]} spacing='4'>
           <Box color='gray.100' fontSize={[20, 36]} as='h2'>
             <Text>5 Continentes,</Text>
             <Text>infinitas possibilidades.</Text>
@@ -48,6 +48,6 @@ export function Banner() {
           right='10%'
         />
       )}
-    </Box>
+    </>
   );
 }

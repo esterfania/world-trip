@@ -1,5 +1,5 @@
 import { Header } from '../components/Header/index';
-import { Banner } from '../components/BannerDefault/index';
+import { BannerDefault } from '../components/Banner/BannerDefault';
 import { Group } from '../components/Group';
 import { Box } from '@chakra-ui/react';
 import { Slider } from '../components/Slider/index';
@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <Banner />
+      <BannerDefault />
       <Box as='main' width='100%' maxWidth={1240} m='auto'>
         <Group />
         <Slider />

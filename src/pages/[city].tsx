@@ -1,3 +1,10 @@
+import { BannerCity } from '../components/Banner/BannerCity';
+import { Header } from '../components/Header/index';
 export default function CityDetails() {
-  return <h1>Iu</h1>;
+  return (
+    <>
+      <Header isVisibleBackButton />
+      <BannerCity />
+    </>
+  );
 }
