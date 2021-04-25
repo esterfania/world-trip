@@ -10,7 +10,7 @@ export default function Home() {
     <>
       <Header />
       <BannerDefault />
-      <Box as='main' width='100%' maxWidth={1240} m='auto'>
+      <Box as='main' width='100%' maxWidth={1440} m='auto'>
         <Group />
         <Slider />
       </Box>

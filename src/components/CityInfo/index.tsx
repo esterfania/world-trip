@@ -3,8 +3,20 @@ import { FiInfo } from 'react-icons/fi';
 
 export function CityInfo() {
   return (
-    <Flex aling='center' justifyContent='space-between' mx='32' my='16'>
-      <Text fontWeight='400' fontSize='24' w='50%' textAlign='justify'>
+    <Flex
+      aling='center'
+      justifyContent='space-between'
+      mx={['8', '16']}
+      my={[8, '16']}
+      wrap='wrap'
+    >
+      <Text
+        fontWeight='400'
+        fontSize={[14, 24]}
+        w={['100%', '50%']}
+        textAlign='justify'
+        mb={[4, 0]}
+      >
         Dublin é uma cidade encantadora. Cidade jovem e vibrante, tem uma grande
         diversidade cultural mas mantém um toque de cidade do interior. Estude
         na capital da Irlanda e tenha uma experiência inesquecível em uma das
@@ -14,25 +26,26 @@ export function CityInfo() {
       <Flex
         align='center'
         justify='space-between'
-        w='40%'
-        fontSize='24'
+        w={['100%', '40%']}
+        fontSize={[18, 24]}
         fontWeight='600'
         textAlign='center'
+        wrap='wrap'
       >
         <Box>
-          <Text color='yellow.400' fontSize='48'>
+          <Text color='yellow.400' fontSize={[24, 48]}>
             20M
           </Text>
           <Text>habitantes</Text>
         </Box>
         <Box>
-          <Text color='yellow.400' fontSize='48'>
+          <Text color='yellow.400' fontSize={[24, 48]}>
             0,894
           </Text>
           <Text>IDH</Text>
         </Box>
         <Box>
-          <Text color='yellow.400' fontSize='48'>
+          <Text color='yellow.400' fontSize={[24, 48]}>
             +600
           </Text>
           <Text>
