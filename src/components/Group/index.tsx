@@ -1,6 +1,5 @@
-import { Flex, Heading, Text } from '@chakra-ui/react';
+import { Flex, Heading, Text, Divider } from '@chakra-ui/react';
 import { IconLinkList } from './IconLinkList';
-import { Divider } from '../Divider';
 
 export function Group() {
   const links = [
