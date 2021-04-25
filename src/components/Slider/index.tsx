@@ -18,31 +18,30 @@ export function Slider() {
     {
       src: './images/dublin.jpg',
       alt: 'Dublin',
-      description: 'Dublin may be small, but it’s also mighty',
+      description: 'Dublin pode parecer pequena, mas é poderosa.',
     },
     {
       src: './images/riydh.jpg',
       alt: 'Riydh',
       description:
-        'Saudi Arabia’s capital and main financial hub has distinct landmarks and is becoming an exciting city.',
+        'Capital e centro financeiro da Arábia Saudita, tem grandes marcos e está se tornando uma cidade empolgante.',
     },
     {
       src: './images/ammie.jpg',
       alt: 'Vietnam',
       description:
-        'As a UNESCO World Heritage Centre, it is best known for its 1000s of sharp peaked islands, which are covered in lush rainforest.',
+        'Patrimônio mundial da UNESCO, é conhecida por suas ilhas e por sua floresta tropical.',
     },
     {
       src: './images/italy.jpg',
       alt: 'Italy',
       description:
-        'Venice is a stunning city of shaded Piazzas, romantic boat trips through the canals and luxurious hotels.',
+        'Veneza é uma cidade com praças deslumbrantes, possui passeios românticos de barco por seus canais.',
     },
     {
       src: './images/moscow.jpg',
       alt: 'Moscow',
-      description:
-        'Moscow is becoming a popular city to visit, with tourists flocking over for the beautiful squares and churches.',
+      description: 'Possui belas praças e igrejas antigas.',
     },
   ];
 
