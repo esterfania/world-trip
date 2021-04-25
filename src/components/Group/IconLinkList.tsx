@@ -34,8 +34,7 @@ export function IconLinkList({ links }: IconLinkProps) {
       my={[8, 24]}
       wrap='wrap'
       listStyleType='none'
-      w={['80%', '100%']}
-      px={[0, 16]}
+      w='80%'
     >
       {links.map((link, i) => (
         <Link href='/' key={i}>
