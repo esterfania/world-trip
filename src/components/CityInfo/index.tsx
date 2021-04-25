@@ -6,7 +6,6 @@ export function CityInfo() {
     <Flex
       aling='center'
       justifyContent='space-between'
-      mx={[4, 4, 24]}
       my={[8, 16]}
       wrap='wrap'
       direction={['column', 'row']}

@@ -13,7 +13,7 @@ export function Header({ isVisibleBackButton = false }: HeaderProps) {
       w='100%'
       position='sticky'
       top='0'
-      zIndex='1'
+      zIndex='2'
       bg='gray.100'
       boxShadow='xs'
     >
