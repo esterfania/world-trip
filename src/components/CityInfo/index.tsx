@@ -31,6 +31,10 @@ export function CityInfo() {
         fontWeight='600'
         textAlign='center'
         wrap='wrap'
+        transition={'all .2s ease-in-out;'}
+        _hover={{
+          transform: 'scale(1.05)',
+        }}
       >
         <Box>
           <Text color='yellow.400' fontSize={[24, 48]}>
