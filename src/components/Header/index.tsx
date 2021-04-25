@@ -17,7 +17,7 @@ export function Header({ isVisibleBackButton = false }: HeaderProps) {
       boxShadow='xs'
     >
       <Flex
-        w={['100%', 1480]}
+        w='100%'
         as='header'
         h='20'
         mx='auto'
