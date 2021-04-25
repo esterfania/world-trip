@@ -9,7 +9,7 @@ export default function CityDetails() {
     <>
       <Header isVisibleBackButton />
       <BannerCity />
-      <Box as='main' maxWidth='1120' m='auto'>
+      <Box as='main' m='auto'>
         <CityInfo />
       </Box>
       <Footer />

@@ -6,9 +6,10 @@ export function CityInfo() {
     <Flex
       aling='center'
       justifyContent='space-between'
-      mx={['8', '16']}
-      my={[8, '16']}
+      mx={[4, 4, 24]}
+      my={[8, 16]}
       wrap='wrap'
+      direction={['column', 'row']}
     >
       <Text
         fontWeight='400'
