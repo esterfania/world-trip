@@ -5,7 +5,7 @@ import { Box } from '@chakra-ui/react';
 import { CityInfo } from '../components/CityInfo';
 import { CardList } from '../components/CardList/index';
 
-export default function CityDetails() {
+export default function CityDetails(cityId?: number) {
   return (
     <>
       <Header isVisibleBackButton />
