@@ -17,31 +17,31 @@ SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, EffectFade]);
 export function Slider() {
   const images = [
     {
-      src: './images/dublin.jpg',
-      alt: 'Dublin',
+      image: './images/dublin.jpg',
+      title: 'Dublin',
       description: 'Dublin pode parecer pequena, mas é poderosa.',
     },
     {
-      src: './images/riydh.jpg',
-      alt: 'Riydh',
+      image: './images/riydh.jpg',
+      title: 'Riydh',
       description:
         'Capital e centro financeiro da Arábia Saudita, tem grandes marcos e está se tornando uma cidade empolgante.',
     },
     {
-      src: './images/ammie.jpg',
-      alt: 'Vietnam',
+      image: './images/ammie.jpg',
+      title: 'Vietnam',
       description:
         'Patrimônio mundial da UNESCO, é conhecida por suas ilhas e por sua floresta tropical.',
     },
     {
-      src: './images/italy.jpg',
-      alt: 'Italy',
+      image: './images/italy.jpg',
+      title: 'Italy',
       description:
         'Veneza é uma cidade com praças deslumbrantes, possui passeios românticos de barco por seus canais.',
     },
     {
-      src: './images/moscow.jpg',
-      alt: 'Moscow',
+      image: './images/moscow.jpg',
+      title: 'Moscow',
       description: 'Possui belas praças e igrejas antigas.',
     },
   ];
@@ -57,12 +57,12 @@ export function Slider() {
         scrollbar={{ draggable: true }}
       >
         {images.map((image) => (
-          <SwiperSlide key={image.alt}>
+          <SwiperSlide key={image.title}>
             <SwiperSlideImage
-              headTitle={image.alt}
+              headTitle={image.title}
               description={image.description}
-              src={image.src}
-              alt={image.alt}
+              src={image.image}
+              alt={image.title}
             />
           </SwiperSlide>
         ))}
