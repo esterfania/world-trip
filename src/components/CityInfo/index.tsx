@@ -1,5 +1,6 @@
 import { Flex, Text, Box, Icon, IconButton, Tooltip } from '@chakra-ui/react';
 import { FiInfo } from 'react-icons/fi';
+import { MotionBox } from '../MotionBox/index';
 
 export function CityInfo() {
   return (
@@ -23,7 +24,7 @@ export function CityInfo() {
         capitais mais bacanas da Europa. Dublin tem o tamanho ideal para a sua
         vida na Europa.
       </Text>
-      <Flex
+      <MotionBox
         align='center'
         justify='space-between'
         w={['100%', '40%']}
@@ -31,10 +32,8 @@ export function CityInfo() {
         fontWeight='600'
         textAlign='center'
         wrap='wrap'
-        transition={'all .2s ease-in-out;'}
-        _hover={{
-          transform: 'scale(1.05)',
-        }}
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
       >
         <Box>
           <Text color='yellow.400' fontSize={[24, 48]}>
@@ -70,7 +69,7 @@ export function CityInfo() {
             </Tooltip>
           </Text>
         </Box>
-      </Flex>
+      </MotionBox>
     </Flex>
   );
 }

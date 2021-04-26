@@ -1,4 +1,5 @@
-import { Flex, Image, Box, Text } from '@chakra-ui/react';
+import { Image, Box, Text } from '@chakra-ui/react';
+import { MotionBox } from '../MotionBox';
 
 interface CardProps {
   src: string;
@@ -8,18 +9,15 @@ interface CardProps {
 
 export function Card({ src, description, title }: CardProps) {
   return (
-    <Flex
+    <MotionBox
       h='280px'
       w='255px'
       direction='column'
       mb={['20px']}
       boxShadow='sm'
       borderBottomRadius='md'
-      transition={'all .2s ease-in-out;'}
-      _hover={{
-        transform: 'scale(1.05)',
-        cursor: 'pointer',
-      }}
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.9 }}
     >
       <Image
         h='173'
@@ -57,6 +55,6 @@ export function Card({ src, description, title }: CardProps) {
           {description}
         </Text>
       </Box>
-    </Flex>
+    </MotionBox>
   );
 }
