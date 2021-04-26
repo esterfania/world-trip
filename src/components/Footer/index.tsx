@@ -13,11 +13,7 @@ export function Footer() {
     >
       <Text>
         Feito com <Icon as={FcLike} fontSize='24' /> por
-        <Link
-          href='https://github.com/esterfania'
-          color='yellow.300'
-          fontWeight='700'
-        >
+        <Link href='https://github.com/esterfania' fontWeight='600'>
           @esterfania
         </Link>
       </Text>
