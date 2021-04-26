@@ -36,19 +36,19 @@ export function CityInfo() {
         whileTap={{ scale: 0.9 }}
       >
         <Box>
-          <Text color='yellow.400' fontSize={[24, 48]}>
+          <Text color='yellow.300' fontSize={[24, 48]}>
             20M
           </Text>
           <Text>habitantes</Text>
         </Box>
         <Box>
-          <Text color='yellow.400' fontSize={[24, 48]}>
+          <Text color='yellow.300' fontSize={[24, 48]}>
             0,894
           </Text>
           <Text>IDH</Text>
         </Box>
         <Box>
-          <Text color='yellow.400' fontSize={[24, 48]}>
+          <Text color='yellow.300' fontSize={[24, 48]}>
             +600
           </Text>
           <Text>

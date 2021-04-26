@@ -29,7 +29,7 @@ export function Card({ src, description, title }: CardProps) {
       />
       <Box
         border='1px'
-        borderColor='yellow.400'
+        borderColor='yellow.300'
         borderTop='0'
         borderBottomRadius='md'
         bg='white'

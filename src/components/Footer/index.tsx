@@ -15,7 +15,7 @@ export function Footer() {
         Feito com <Icon as={FcLike} fontSize='24' /> por
         <Link
           href='https://github.com/esterfania'
-          color='yellow.400'
+          color='yellow.300'
           fontWeight='700'
         >
           @esterfania

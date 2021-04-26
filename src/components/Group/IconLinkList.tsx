@@ -44,7 +44,7 @@ export function IconLinkList({ links }: IconLinkProps) {
             </Stack>
           ) : (
             <Flex aling='center' justify='center' m='auto'>
-              <ListIcon as={BsDot} color='yellow.400' fontSize='32' />
+              <ListIcon as={BsDot} color='yellow.300' fontSize='32' />
               <Text fontSize='18'>{link.alt}</Text>
             </Flex>
           )}
