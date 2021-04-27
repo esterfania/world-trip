@@ -27,13 +27,13 @@ export function IconLinkList({ links }: IconLinkProps) {
   return (
     <Flex
       as={UnorderedList}
-      justify='space-between'
+      justify='space-evenly'
       align='center'
       mx='0'
       my={[8, 24]}
       wrap='wrap'
       listStyleType='none'
-      w='80%'
+      w='90%'
     >
       {links.map((link, i) => (
         <ListItem key={i} fontWeight='600'>
