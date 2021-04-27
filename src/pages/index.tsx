@@ -20,7 +20,7 @@ export default function Home({ cities }: HomeProps) {
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
         <meta charSet='UTF-8' />
 
-        <title>worldtrip</title>
+        <title>Home | worldtrip</title>
         <meta property='og:description' content='worldtrip' />
         <meta
           property='og:url'

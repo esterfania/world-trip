@@ -28,7 +28,7 @@ export default function CityDetails({ city, cities }: CityDetailsProps) {
         <meta property='og:image:height' content='600' />
 
         <meta name='twitter:card' content='summary_large_image' />
-        <title>{city.title}</title>
+        <title>{city.title} | worldtrip</title>
       </Head>
       <Header isVisibleBackButton />
       <BannerCity title={city.title} image={city.image} />
