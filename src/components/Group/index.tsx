@@ -28,7 +28,7 @@ export function Group() {
           fontSize={[20, 36]}
         >
           Vamos nessa?
-          <Text>Então escolha seu continente</Text>
+          <Text>Então escolha seu país</Text>
         </Heading>
       </Flex>
     </Flex>
