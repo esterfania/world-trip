@@ -1,5 +1,1 @@
-import axios from 'axios';
-
-export const api = axios.create({
-  baseURL: '/api',
-});
+export const api = "http://localhost:3000/api";

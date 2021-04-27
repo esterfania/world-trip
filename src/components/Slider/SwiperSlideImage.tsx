@@ -25,7 +25,7 @@ export function SwiperSlideImage({
         direction='column'
         zIndex='1'
       >
-        <SliderLink href={'/cities'}>
+        <SliderLink href={'/1'}>
           <Heading color='gray.200' fontWeight='700' fontSize={[24, 48]} mb='4'>
             {headTitle}
           </Heading>

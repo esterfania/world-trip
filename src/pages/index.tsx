@@ -1,30 +1,23 @@
-import { Header } from '../components/Header/index';
-import { BannerDefault } from '../components/Banner/BannerDefault';
-import { Group } from '../components/Group';
-import { Box } from '@chakra-ui/react';
-import { Slider } from '../components/Slider/index';
-import { Footer } from '../components/Footer/index';
-import { useEffect, useState } from 'react';
-import { CityService } from '../services/CityService';
-import { City } from '../models/City';
+import { Header } from "../components/Header/index";
+import { BannerDefault } from "../components/Banner/BannerDefault";
+import { Group } from "../components/Group";
+import { Box } from "@chakra-ui/react";
+import { Slider } from "../components/Slider/index";
+import { Footer } from "../components/Footer/index";
+import { City } from "../models/City";
+import { GetServerSideProps } from "next";
+import { api } from "../services/api";
 
-export default function Home() {
-  const [cities, setCities] = useState<City[]>([]);
-  const getCities = CityService.getCities;
+interface HomeProps {
+  cities: City[];
+}
 
-  useEffect(() => {
-    async function getData() {
-      const response = await getCities();
-      setCities(response.data);
-    }
-    getData();
-  }, []);
-
+export default function Home({ cities }: HomeProps) {
   return (
     <>
       <Header />
       <BannerDefault />
-      <Box as='main' width='100%' maxWidth={1440} m='auto'>
+      <Box as="main" width="100%" maxWidth={1440} m="auto">
         <Group />
         <Slider cities={cities} />
       </Box>
@@ -32,3 +25,14 @@ export default function Home() {
     </>
   );
 }
+
+export const getServerSideProps: GetServerSideProps = async () => {
+  const resCities = await fetch(`${api}/cities`);
+
+  const cities = await resCities.json();
+  return {
+    props: {
+      cities,
+    },
+  };
+};
