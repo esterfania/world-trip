@@ -9,6 +9,7 @@ import {
   ListIcon,
 } from '@chakra-ui/react';
 import { BsDot } from 'react-icons/bs';
+import { MotionBox } from '../MotionBox';
 
 interface Links {
   src: string;
@@ -25,7 +26,7 @@ export function IconLinkList({ links }: IconLinkProps) {
   });
 
   return (
-    <Flex
+    <MotionBox
       as={UnorderedList}
       justify='space-evenly'
       align='center'
@@ -34,6 +35,8 @@ export function IconLinkList({ links }: IconLinkProps) {
       wrap='wrap'
       listStyleType='none'
       w='90%'
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.9 }}
     >
       {links.map((link, i) => (
         <ListItem key={i} fontWeight='600'>
@@ -50,6 +53,6 @@ export function IconLinkList({ links }: IconLinkProps) {
           )}
         </ListItem>
       ))}
-    </Flex>
+    </MotionBox>
   );
 }
