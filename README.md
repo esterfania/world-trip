@@ -1,34 +1,80 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h2 align="center">
+  WorldTrip
+</h2>
+  
+<p align="center">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/esterfania/world-trip?color=%2304D361">
 
-## Getting Started
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/esterfania/world-trip">
 
-First, run the development server:
+  	
+  <a href="https://www.linkedin.com/in/esterfania-gama/">
+    <img alt="Made by esterfania" src="https://img.shields.io/badge/made%20by-esterfania-%2304D361">
+  </a>
+	
+  
+  <a href="https://github.com/esterfania/dtmoney/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/esterfania/world-trip">
+  </a>
 
-```bash
-npm run dev
-# or
-yarn dev
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
+   <a href="https://github.com/esterfania/countdown/stargazers">
+    <img alt="Stargazers" src="https://img.shields.io/github/stars/esterfania/world-trip?style=social">
+  </a>
+</p>
+
+
+<h2 align="center">
+    <img alt="WorldTrip" title="#world-trip" src="https://user-images.githubusercontent.com/35200622/116480435-b8253780-a857-11eb-9a94-fb91a72a242d.gif" width="500px" />
+</h2>
+
+
+
+## 📝 Conteúdo
+<p align="center">
+<a href="#about">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#getting_started">Iniciando</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#built_using">Tecnologias Utilizadas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#contribute">Como contribuir</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+</p>
+
+
+## 🧐 Sobre <a name = "about"></a>
+
+WorldTrip é uma aplicação feita com o objetivo de ser um guia interativo dos países.
+
+
+## 🏁 Iniciando <a name = "getting_started"></a>
+
+Instruções de como acessar as rotas e instalação.
+
+### ⚒ Instalando <a name = "installing"></a>
+
+```
+# 💻 Iniciando
+
+$ cd web
+$ yarn install
+$ yarn start
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ⛏️ Tecnologias Utilizadas <a name = "built_using"></a>
+- 🔵 [TypeScript][typescript]
+- ⚛️ [React][reactjs]
+- 🔼 [NextJs][next]
+- 💅 [Chakra-UI][chakra-ui]
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## 🤔 Como contribuir <a name = "contribute"></a>
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- Faça um fork desse repositório;
+- Cria uma branch com a sua feature: `git checkout -b minha-feature`;
+- Faça commit das suas alterações: `git commit -m 'feat: Minha nova feature'`;
+- Faça push para a sua branch: `git push origin minha-feature`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Feito com ❤️ por Esterfania Gama 👋🏽 [Entre em contato!](https://www.linkedin.com/in/esterfania-gama/)
 
-## Learn More
+[next]: https://nextjs.org/
+[typescript]: https://www.typescriptlang.org/
+[Chakra-UI]: https://chakra-ui.com/
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
