@@ -61,7 +61,7 @@ $ yarn dev
 
 ## ⛏️ Tecnologias Utilizadas <a name = "built_using"></a>
 - 🔵 [TypeScript][typescript]
-- ⚛️ [React][https://pt-br.reactjs.org/]
+- ⚛️ [React](https://pt-br.reactjs.org/)
 - 🔼 [NextJs][next]
 - 💅 [Chakra-UI][chakra-ui]
 
