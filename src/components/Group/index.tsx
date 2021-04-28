@@ -13,7 +13,7 @@ export function Group() {
   return (
     <Flex justify='center' align='center' direction='column' w='100%'>
       <IconLinkList links={links} />
-      <Divider />
+      <Divider colorScheme='gray' />
       <Flex
         justify='center'
         align='center'

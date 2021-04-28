@@ -1,6 +1,11 @@
-import { extendTheme } from '@chakra-ui/react';
+import { extendTheme, DeepPartial, ThemeConfig } from '@chakra-ui/react';
+const config: DeepPartial<ThemeConfig> = {
+  initialColorMode: 'dark',
+  useSystemColorMode: false,
+};
 
 export const theme = extendTheme({
+  config,
   colors: {
     yellow: {
       '300': '#FFBA08',
@@ -11,11 +16,11 @@ export const theme = extendTheme({
     body: 'Poppins',
   },
   styles: {
-    global: {
-      body: {
-        bg: 'gray.100',
-        color: 'gray.600',
+    global: (props) => ({
+      'html, body': {
+        bg: props.colorMode === 'dark' ? 'gray.900' : 'gray.100',
+        color: props.colorMode === 'dark' ? 'gray.200' : 'gray.600',
       },
-    },
+    }),
   },
 });
