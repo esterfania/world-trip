@@ -34,18 +34,19 @@ export function Header({ isVisibleBackButton = false }: HeaderProps) {
         wrap='wrap'
         m='auto'
       >
-        {isVisibleBackButton && (
-          <SliderLink href='/'>
-            <Flex justify='flex-start' w='50px'>
+        <SliderLink href='/'>
+          <Flex justify='flex-start' w='50px'>
+            {isVisibleBackButton && (
               <IconButton
                 icon={<Icon as={IoIosArrowBack} />}
                 fontSize='24'
                 aria-label='back button'
                 variant='ghost'
               />
-            </Flex>
-          </SliderLink>
-        )}
+            )}
+          </Flex>
+        </SliderLink>
+
         <Flex
           justify='center'
           align='center'
