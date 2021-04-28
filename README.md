@@ -53,9 +53,9 @@ Instruções de como acessar as rotas e instalação.
 ```
 # 💻 Iniciando
 
-$ cd web
+$ cd world-trip
 $ yarn install
-$ yarn start
+$ yarn dev
 
 ```
 
