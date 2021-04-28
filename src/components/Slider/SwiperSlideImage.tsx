@@ -45,6 +45,7 @@ export function SwiperSlideImage({
         alt={alt}
         objectFit='cover'
         filter='brightness(50%)'
+        loading='eager'
         h={['250px', '450px']}
         w='100%'
         m='auto'

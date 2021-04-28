@@ -42,7 +42,7 @@ export function IconLinkList({ links }: IconLinkProps) {
         <ListItem key={i} fontWeight='600'>
           {isWideVersion ? (
             <Stack align='center' justify='space-arround'>
-              <Image src={link.src} alt={link.alt} />
+              <Image src={link.src} alt={link.alt} loading='eager' />
               <Text fontSize='24'>{link.alt}</Text>
             </Stack>
           ) : (

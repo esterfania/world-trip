@@ -37,6 +37,7 @@ export function Card({ src, description, title, id }: CardProps) {
         alt={title}
         filter='brightness(70%)'
         borderTopRadius='md'
+        loading='eager'
       />
       <Box
         border='1px'
