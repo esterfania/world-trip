@@ -11,22 +11,11 @@ export function Group() {
   ];
 
   return (
-    <Flex justify='center' align='center' direction='column' w='100%'>
+    <Flex justify="center" align="center" direction="column" w="100%">
       <IconLinkList links={links} />
-      <Divider colorScheme='gray' />
-      <Flex
-        justify='center'
-        align='center'
-        mt={[8, 16]}
-        mb={[8, 16]}
-        px={[0, 32]}
-      >
-        <Heading
-          as='h3'
-          fontWeight='500'
-          textAlign='center'
-          fontSize={[20, 36]}
-        >
+      <Divider colorScheme="gray" />
+      <Flex justify="center" align="center" mt={[8, 16]} mb={[8, 16]} px={[0, 32]}>
+        <Heading as="h3" fontWeight="500" textAlign="center" fontSize={[20, 36]}>
           Vamos nessa?
           <Text>Então escolha seu país</Text>
         </Heading>

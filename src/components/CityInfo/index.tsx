@@ -1,6 +1,6 @@
-import { Flex, Text, Box, Icon, IconButton, Tooltip } from "@chakra-ui/react";
-import { FiInfo } from "react-icons/fi";
-import { MotionBox } from "../MotionBox/index";
+import { Flex, Text, Box, Icon, IconButton, Tooltip } from '@chakra-ui/react';
+import { FiInfo } from 'react-icons/fi';
+import { MotionBox } from '../MotionBox/index';
 
 interface CityInfoProps {
   description: string;
@@ -8,26 +8,14 @@ interface CityInfoProps {
 
 export function CityInfo({ description }: CityInfoProps) {
   return (
-    <Flex
-      aling="center"
-      justifyContent="space-between"
-      my={[8, 16]}
-      wrap="wrap"
-      direction={["column", "row"]}
-    >
-      <Text
-        fontWeight="400"
-        fontSize={[14, 24]}
-        w={["100%", "50%"]}
-        textAlign="justify"
-        mb={[4, 0]}
-      >
+    <Flex aling="center" justifyContent="space-between" my={[8, 16]} wrap="wrap" direction={['column', 'row']}>
+      <Text fontWeight="400" fontSize={[14, 24]} w={['100%', '50%']} textAlign="justify" mb={[4, 0]}>
         {description}
       </Text>
       <MotionBox
         align="center"
         justify="space-between"
-        w={["100%", "40%"]}
+        w={['100%', '40%']}
         fontSize={[18, 24]}
         fontWeight="600"
         textAlign="center"
@@ -53,12 +41,7 @@ export function CityInfo({ description }: CityInfoProps) {
           </Text>
           <Text>
             bares
-            <Tooltip
-              label="A cidade possui mais de 600 bares!"
-              aria-label="A tooltip"
-              placement="bottom"
-              hasArrow
-            >
+            <Tooltip label="A cidade possui mais de 600 bares!" aria-label="A tooltip" placement="bottom" hasArrow>
               <IconButton
                 icon={<Icon as={FiInfo} />}
                 size="xs"
